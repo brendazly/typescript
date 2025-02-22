@@ -1,18 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cálculo Idade</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
 </head>
 <body>
-    <h1> Nome: <span id="nome"></span></h1>
-    <h1> Idade: <span id="idade"></span></h1>
-    <h2>Ano: <span id="ano"></span></h2>
+    <style>
+        #pedidos {
+            font-size: 24px;
+        }
+        #calc {
+            background-color: #ffe7e7;
+            color: black;
+            font-size: 24px;
+        }
+        h1, h2 {
+            font-size: 24px;
+        }
+        .form-control {
+            width: 30%;
+        }
+        p{
+            font-size: 38px;
 
-    <script>src="./js/pessoa.js"</script>
-    <script>src="./js/main.js"</script>
+        }
+        .container{
+            margin-top: 100px;
+        }
+    </style>
 
-    
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <p>Calcule a sua Idade</p><br><br>
+                <label for="campoNome" id="pedidos">Nome:</label>
+                <input type="text" class="form-control" id="campoNome">
+                <br>
+                <label for="campoAno" id="pedidos">Ano de nascimento:</label>
+                <input type="number" class="form-control" id="campoAno">
+                <button class="btn btn-primary mt-3" id="calc">Calcular</button>
+                <br><br><br>
+
+                <h1>Nome: <span id="nome"></span></h1>
+                <h1>Idade: <span id="idade"></span></h1>
+                <h2>Ano: <span id="ano"></span></h2>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/pessoa.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

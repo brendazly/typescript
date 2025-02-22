@@ -26,7 +26,7 @@ var empresa;
         set anoNasc(anoNasc) {
             this._anoNasc = anoNasc;
         }
-        calacularIdade(anoAtual) {
+        calcularIdade(anoAtual) {
             return anoAtual - this._anoNasc;
         }
     }

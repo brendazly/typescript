@@ -10,6 +10,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "bootstrap": "^5.3.3",
     "live": "^0.1.19",
     "live-server": "^1.2.2",
     "server": "^1.0.41"

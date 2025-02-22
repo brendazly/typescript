@@ -31,7 +31,7 @@ namespace empresa { // Inicia um "namespace" chamado "empresa" para organizar as
         set anoNasc(anoNasc:number){
             this._anoNasc =anoNasc;
         }
-        public calacularIdade(anoAtual:number){
+        public calcularIdade(anoAtual:number){
             return anoAtual - this._anoNasc;
         }
     }
